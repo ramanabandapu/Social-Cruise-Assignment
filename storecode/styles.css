@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.topSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/background44.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #00000060;
+    height: 50px;
+}
+
+.nav h2 {
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul>li {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav ul>li:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.productCode {
+    width: 40vw;
+    margin: 2% 10%;
+    height: calc(100vh - 100px);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.searchCode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #09410cb6;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 590px;
+    height: 50%;
+    position: absolute;
+    right: -290px;
+}
+.searchCode::before{
+    content: '';
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff60;
+    position: absolute;
+    left: -300px;
+    border-radius: 10px 60px;
+    backdrop-filter: blur(15px);
+}
+.searchCode::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff60;
+    position: absolute;
+    left: -130px;
+    bottom: -50px;
+    border-radius: 10px 40px;
+    backdrop-filter: blur(15px);
+}
+
+.searchCode h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.searchCode input {
+    border: none;
+    width: 80%;
+    border-bottom: 1px solid #2b8234cb;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+}
+
+.searchCode input::placeholder {
+    color: #ffffff;
+    font-weight: 600;
+}
+.searchCode button{
+    border: none;
+    background-color: #000000;
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.illustration{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/section2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.influencersContainer,.partnershipContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    gap: 40px;
+}
+.label h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 800;
+    color: #2b8234cb;
+}
+.partnershipContainer .label,.influencersContainer .label{
+    width: 40%;
+    padding: 0 40px;
+}
+.partnershipContainer .content, .influencersContainer .content{
+    width: 60%;
+    padding: 0 40px;
+}
+.content p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.content p b{
+    color: #2b8234cb;
+}
+
+.register{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.register button{
+    border: none;
+    background-color: #000000;
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b8234cb;
+    color: #ffffff;
+}
